@@ -60,7 +60,7 @@ To successfully compile and run all parts of the project the following software 
 * Open the Serial Monitor to make sure that the sensors are reading
 * Remember to close the Serial Monitor before running the code
 
-#### Python code
+#### Main Program (Python codes)
 * Open CMD and change the directory to the folder holds the python codes
 * Double check the port and baud rate values in the Python code if there are any
 * Execute "home.py" to ensure that the robot is in home position
