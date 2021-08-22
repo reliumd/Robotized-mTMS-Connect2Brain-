@@ -55,23 +55,17 @@ To successfully compile and run all parts of the project the following software 
 * Connect the sensors to Arduino according to this diagram
 ![Sensor-Connections](https://user-images.githubusercontent.com/63422870/130366230-0ed70bcb-d60b-47a6-9a54-abda45ce45dc.png)
 * Open the Arduino program named "AnalogRead" in the repository (please check and modify the Serial Monitor baud rate)
+* Connect the Arduino to PC
+* Double check the port and baud rate values in the Python code as well
+* Open the Serial Monitor to make sure that the sensors are reading
+* Remember to close the Serial Monitor before running the code
 
-#### Beckhoff TwinCAT
+#### Python code
+* Open CMD and change the directory to the folder holds the python codes
+* Double check the port and baud rate values in the Python code if there are any
+* Execute "home.py" to ensure that the robot is in home position
+* Execute "ForceController.py" to run the program
 
-
-#### Mosquitto (MQTT broker)
-
-
-#### UaExpert (OPC UA Client)
-Discover the server address in UaExpert. If it cannot detect the server, manually connnect it through the server address "opc.tcp://localhost:51210/UA/VcOpcUaServer"
-
-#### ThingSpeak
-* Log in to ThingSpeak
-* Create channel and field, ([guide](https://www.youtube.com/watch?v=sBAuexThr30))
-* Make private channel and field
-* Create Write API Key
-* Replace these values of API key in TwinCAT code
-![API key](https://user-images.githubusercontent.com/63422870/103790777-52176900-504a-11eb-95b9-58852edecb04.png)
 
 ## References
 Information on Connect2Brain (https://www.connecttobrain.eu/)  
