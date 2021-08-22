@@ -1,6 +1,6 @@
 # Robotized-mTMS-Connect2Brain-
 
-> This project serves as the thesis topic for Minh Duc Pham. This project attempts to prototype a very first robotized mTMS system. The robot is controlled by a hybrid position/force controller. This repository only consists of the force controller. For viewing the project as a whole, please visit Renan's repositories ![rmatsuda](https://github.com/rmatsuda)
+> This project serves as the thesis topic for Minh Duc Pham. This project attempts to prototype a very first robotized mTMS system. The robot is controlled by a hybrid position/force controller. This repository only consists of the force controller. For viewing the project as a whole, please visit Renan's repositories [rmatsuda](https://github.com/rmatsuda)
 
 First of all, I would recommend you to read the project report. Then you can follow the README files for installation and how to use the software. Finally you check out this tutorial [video](https://youtu.be/iiVabQawqck) I created. Have fun!!!
 
