@@ -2,7 +2,7 @@
 
 > This project serves as the thesis topic for Minh Duc Pham. This project attempts to prototype a very first robotized mTMS system. The robot is controlled by a hybrid position/force controller. This repository only consists of the force controller. For viewing the project as a whole, please visit Renan's repositories [rmatsuda](https://github.com/rmatsuda)
 
-First of all, I would recommend you to read the project report. Then you can follow the README files for installation and how to use the software. Finally you check out this tutorial [video](https://youtu.be/iiVabQawqck) I created. Have fun!!!
+First of all, I would recommend you to read my final thesis file. Then you can follow the README files for installation and how to use the software. Finally you should be able to execute the programs on the robot through the below guidelines. I hope you will find my findings interesting.
 
 ---
 
@@ -20,45 +20,32 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-The scope of this project is to create a virtual representation of an automated production layout on Visual Components where users can interact, simulate and make modifications through a set of APIs. These APIs will be created based on the granular level of control, ranging from individual control to sequence control. The intercommunication between Visual Components and the middlewares involved is feasible via industrial communication protocol (OPC UA) and IoT messaging protocol (MQTT). The corresponding APIs can be called from OPC UA Server and the desired data of the simulation and layout can be visualized on OPC UA Client and on Cloud (ThingSpeak).
+The scope of this project is to create a closed-loop force-controlled algorithm and code for a 6 degree-of-freedom (DOF) robot arm which holds the stimulating coils for mTMS system. The robot should move according to the trajectory planning created by Invesalius, and while moving, should stop any time it detects a force acting against the stimulating coils. On top of that, it will compensate for the changes in the forces acting towards it when it reached the destination point, by retracting in the direction of the force vector. 
 
 #### Requirements
 To successfully compile and run all parts of the project the following software and environment must be installed and set up:
-* Visual Components
-* Beckhoff TwinCAT
-* Mosquitto
-* UaExpert
-* ThingSpeak
+* Han's Robot software
+* Invesalius
+* Arduino IDE
+* Python-development environment of choice
 
-[Back To The Top](#AOLE-Project)
+[Back To The Top](#Robotized-mTMS-Connect2Brain-)
 
 ---
 
 ## Installation
 
-#### Visual Components (Simulation Environment)
-* Install Visual Components ([Link to download](https://www.visualcomponents.com/products/downloads/))
-    - Requires a license that supports modelling and the OPC UA connectivity feature
-* Install VC2OPCUA ([Link to download](https://github.com/SintefManufacturing/vc2opcua))
+#### Han's Robot software
+* Install Han's Robot software which comes with the manuals (Robot.3.5.417.556 Application file)
 
-#### Beckhoff TwinCAT
-* Install TwinCAT ([Link to download](http://www.beckhoff.com/TwinCAT/))
-    - Requirements on all devices at least TwinCAT v.3.1.4022
+#### Invesalius
+* Install Invesalius software ([Link to download](https://github.com/invesalius/invesalius3))
+    - Invesalius installation guide ([Link to download](https://github.com/invesalius/invesalius3/wiki/Running-InVesalius-3-in-Windows))
 
-#### Mosquitto (MQTT broker)
-* Installation file and guide can be found under IoTTask folder
-* Install OpenSSL (Win32OpenSSL-1_0_2n.exe) to root folder
-    - On step “Select Additional Tasks” choose copy DLLs to /bin directory
-* Installing mosquitto (mosquitto-1.4.15a-install-win32.exe)
-* Put pthreadVC2.lib in mosquitto folder
+#### Arduino IDE
+* Install Arduino IDE ([Link to download](https://www.arduino.cc/en/software))
 
-#### UaExpert (OPC UA Client)
-* Install UaExpert ([Link to download](https://www.unified-automation.com/downloads.html))
-
-#### ThingSpeak (Cloud)
-* Create an account or sign in with MATLAB account ([Log in here](https://thingspeak.com/login))
-
-[Back To The Top](#AOLE-Project)
+[Back To The Top](#Robotized-mTMS-Connect2Brain-)
 
 ---
 
@@ -95,11 +82,11 @@ Discover the server address in UaExpert. If it cannot detect the server, manuall
 ![API key](https://user-images.githubusercontent.com/63422870/103790777-52176900-504a-11eb-95b9-58852edecb04.png)
 
 ## References
-Detailed information on mosquitto broker (https://mosquitto.org/)  
-To get API keys create an account on (https://thingspeak.com/)  
-Tutorials on Visual Components (https://academy.visualcomponents.com/)
+Information on Connect2Brain (https://www.connecttobrain.eu/)  
+Arduino products (https://www.arduino.cc/en/Main/Products)
+Details on the force sensors (https://www.tekscan.com/products-solutions/force-sensors/a401)
 
-[Back To The Top](#AOLE-Project)
+[Back To The Top](#Robotized-mTMS-Connect2Brain-)
 
 ---
 
@@ -121,7 +108,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-[Back To The Top](#AOLE-Project)
+[Back To The Top](#Robotized-mTMS-Connect2Brain-)
 
 ---
 
