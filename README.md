@@ -67,6 +67,11 @@ To successfully compile and run all parts of the project the following software 
 * Execute "ForceController.py" to run the program
 
 
+#### Exporting Force Readings
+* Run "PythonToExcel.py" individually or embed these lines onto the main program to extract the force readings to Excel files
+* The Excel files can subsequently be imported to Matlab for analysis
+
+
 ## References
 Information on Connect2Brain (https://www.connecttobrain.eu/)  
 Details on the force sensors (https://www.tekscan.com/products-solutions/force-sensors/a401)
