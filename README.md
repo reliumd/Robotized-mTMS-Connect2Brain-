@@ -51,24 +51,16 @@ To successfully compile and run all parts of the project the following software 
 
 ## How To Use
 
-#### Visual Components
-* Open Visual Components file named "Layout.vcmx" (under Visual Components folder)
-![Layout](https://user-images.githubusercontent.com/63422870/103789610-e54f9f00-5048-11eb-8b9d-be63f795fc88.png)
-* Set up OPC UA connection to TwinCAT and UaExpert
-![VC2OPCUA](https://user-images.githubusercontent.com/63422870/103790474-eaf9b480-5049-11eb-9fb2-6b972687f026.PNG)
-![VC-TwinCAT](https://user-images.githubusercontent.com/63422870/103791345-03b69a00-504b-11eb-8f67-0436d8bd39e2.png)
-* Create Variable Pairs with TwinCAT
-![Paired variables](https://user-images.githubusercontent.com/63422870/103791580-47a99f00-504b-11eb-9567-86f55389d950.png)
-* Run simulation
+#### Sensors and Arduino
+* Connect the sensors to Arduino according to this diagram
+![Sensor-Connections](https://user-images.githubusercontent.com/63422870/130366230-0ed70bcb-d60b-47a6-9a54-abda45ce45dc.png)
+* Open the Arduino program named "AnalogRead" in the repository (please check and modify the Serial Monitor baud rate)
 
 #### Beckhoff TwinCAT
-* See "installationGuide.pdf" in the IoTTask folder for more information
-* Open "IotMqttSampleUsingQueue.sln" file (can be found in TwinCAT folder)
-* Remember to change your IP address and port info
-![IP address and port](https://user-images.githubusercontent.com/63422870/103790988-930f7d80-504a-11eb-8c4f-b2d24ebaedf4.png)
+
 
 #### Mosquitto (MQTT broker)
-See "installationGuide.pdf" in the IoTTask folder for more information
+
 
 #### UaExpert (OPC UA Client)
 Discover the server address in UaExpert. If it cannot detect the server, manually connnect it through the server address "opc.tcp://localhost:51210/UA/VcOpcUaServer"
