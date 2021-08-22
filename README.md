@@ -83,8 +83,7 @@ Discover the server address in UaExpert. If it cannot detect the server, manuall
 
 ## References
 Information on Connect2Brain (https://www.connecttobrain.eu/)  
-Arduino products (https://www.arduino.cc/en/Main/Products)
-
+Arduino products (https://www.arduino.cc/en/Main/Products) 
 Details on the force sensors (https://www.tekscan.com/products-solutions/force-sensors/a401)
 
 [Back To The Top](#Robotized-mTMS-Connect2Brain-)
