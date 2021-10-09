@@ -87,7 +87,7 @@ RobotMoveJ(targetJ)
 
 #forceTemp = 0  # Medium variable to compute forceDif
 
-# Moving to
+# Moving to the stimulating target point
 while True:
     if (arduinoSerialData.inWaiting()>0):
         myData1 = arduinoSerialData.readline().decode('ascii')  # Reading from Arduino terminal
