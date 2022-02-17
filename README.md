@@ -2,7 +2,7 @@
 
 > This project serves as the thesis topic for Minh Duc Pham. This project attempts to prototype a very first robotized mTMS system. The robot is controlled by a hybrid position/force controller. This repository only consists of the force controller. For viewing the project as a whole, please visit Renan's repositories [rmatsuda](https://github.com/rmatsuda)
 
-First of all, I would recommend you to read my final thesis file. Then you can follow the README files for installation and how to use the software. Finally you should be able to execute the programs on the robot through the below guidelines. I hope you will find my findings interesting.
+First of all, I would recommend you to read my final thesis file ([Link to view](https://aaltodoc.aalto.fi/handle/123456789/112631)). Then you can follow the README files for installation and how to use the software. Finally you should be able to execute the programs on the robot through the below guidelines. I hope you will find my findings interesting.
 
 ---
 
